@@ -1,0 +1,36 @@
+/* .Avenir-web-blogs-container {
+    display: inline-table;
+    overflow: hidden;
+} */
+
+.card {
+    border: none;
+    background-color: #f7f7f7;
+    padding: 100px;
+    width: 300px;
+    margin: 10px;
+    display: none; /* Initially hide all cards */
+}
+.card img {
+    height: 200px;
+    width: 300px;
+    margin-left: 18px;
+    margin-bottom: 50px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.show-card {
+    display: block !important; /* Show the card */
+}
+
+.blog-pre-next-button button {
+    width: 100px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    justify-content: space-around;
+}

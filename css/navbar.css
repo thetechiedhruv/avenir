@@ -1,0 +1,66 @@
+.video-container {
+  position: relative;
+}
+
+.carousel-item {
+  position: relative;
+  text-align: left;
+  color: white;
+  font-size: 330%;
+  font-family: Ginto, Roboto, sans-serif;
+  transition: color 1s;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 198px;
+  left: 260px;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-effect {
+  animation: zoomInOut 5s infinite;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 80%;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 10px;
+}
+
+.pink {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fe02c7;
+    padding-bottom: 1.5px;
+  }

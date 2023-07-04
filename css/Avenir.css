@@ -1,0 +1,125 @@
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+}
+
+.video {
+  position: relative;
+}
+
+.video video {
+  height:auto ;
+  width: 100%;
+  padding: 8px;
+  top: -50px;
+}
+
+.navbar {
+  height: 45px;
+  width: 210px;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0.75;
+  margin: 5% 40%;
+  transition: 0.8s ease;
+  display: flex;
+  background-color: #000;
+  border-radius: 100px;
+}
+
+.navbar:hover {
+  width: 90%;
+}
+
+.navbar .collapse.navbar-collapse .nav-item {
+  display: none;
+}
+
+.navbar:hover .collapse.navbar-collapse .nav-item {
+  display: inline-block;
+}
+
+.navbar:not(:hover) .collapse.navbar-collapse .nav-item {
+  display: none;
+}
+
+.navbar .collapse.navbar-collapse.show .nav-item {
+  display: block;
+  background-color: #000;
+}
+
+.navbar:hover .navbar_brandlogo img {
+  max-width: 100%;
+}
+
+.video-description {
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-description .static-text {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 500;
+  font-family: EB Garamond;
+}
+
+.video-description .animated-text {
+  margin-left: 0px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.animated-text li {
+  list-style: none;
+  color: #fff;
+  font-size: 60px;
+  font-family: EB Garamond;
+  font-weight: 530;
+  position: relative;
+  top: 0;
+  animation: slide 5s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.animated-text li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 30px;
+}
+
+.animated-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 0px;
+  animation: typing 3s steps(13) infinite;
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+
+  100% {
+    left: 0;
+  }
+}

@@ -1,0 +1,115 @@
+.swiper-container {
+  position: relative;
+  width: 100%;
+}
+
+.slide-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 25%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-content {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  /* Adjust the padding-bottom value to maintain the aspect ratio of the image */
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #333;
+}
